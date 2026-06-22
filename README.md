@@ -20,7 +20,7 @@ while being trained on a single consumer GPU.
 > format it was trained on. This is the standard base→instruct comparison (e.g.
 > DeepSeek-Coder-base → Magicoder-S), stated explicitly for transparency.
 
-## Integrity — why these numbers are honest
+## Integrity - why these numbers are honest
 
 This project started on Llama-3.2-3B and originally reported an inflated score
 because it was **training on the test set** (`bigcode/humanevalpack` *is*
@@ -36,7 +36,7 @@ HumanEval). Every result here is built to be defensible:
   and fine-tuned scored with the identical harness.
 
 A control experiment on Llama-3.2-3B with the same honest pipeline gained only
-+2.5 pts — which correctly identified that the **base model**, not the training
++2.5 pts - which correctly identified that the **base model**, not the training
 recipe, was the ceiling. Switching to a code-specialized base + instruction
 tuning is what produced the +33.5 pt jump.
 
@@ -57,7 +57,7 @@ tuning is what produced the +33.5 pt jump.
 Open `finetune_qwen2.5-Coder-3B.ipynb` in Colab (L4 recommended) and run top to
 bottom. It loads the base model, builds the decontaminated ChatML dataset, scores
 the base model, fine-tunes, scores the fine-tune, and logs everything to W&B. No
-secrets are hard-coded — the W&B key is entered at runtime and the HF push reads a
+secrets are hard-coded - the W&B key is entered at runtime and the HF push reads a
 token via `getpass`.
 
 ## Model
