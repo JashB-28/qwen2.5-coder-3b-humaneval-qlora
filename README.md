@@ -6,6 +6,8 @@ trained and evaluated **leak-free** with experiment tracking in Weights & Biases
 
 ## Results (HumanEval, pass@1, greedy + EvalPlus sanitize)
 
+![HumanEval pass@1 — base vs fine-tuned](assets/results_comparison.png)
+
 | Model | HumanEval | HumanEval+ |
 |-------|:---------:|:----------:|
 | Base Qwen2.5-Coder-3B *(completion format)* | 0.433 | 0.354 |
